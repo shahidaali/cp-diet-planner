@@ -1,0 +1,52 @@
+/*
+PLAN EDITOR
+===========================
+*/
+.cp__dp_cols {
+    display: flex;
+    flex-direction: row;
+}
+.cp__dp_cols_3 {
+    margin: 0px -5px;
+}
+.cp__dp_cols_3 .cp__dp_col {
+    border: 1px solid #ccc;
+    background: #fff;
+    flex-grow: 1;
+    margin: 10px 5px;    
+}
+.cp__dp_cols_2 {
+    margin: 0px -5px;
+}
+.cp__dp_cols_2 .cp__dp_col {
+    border: 1px solid #ccc;
+    background: #fff;
+    flex-grow: 1;
+    margin: 10px 5px;    
+}
+.cp__dp_cols_2 .cp__dp_col_1 {
+    width: 55%;
+}
+.cp__dp_settings_panel {
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+}
+.cp__dp_settings_panel:last-child {
+	border-bottom: none;
+}
+.cp__dp_panel_title {
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*
+NEW VIEW FORM
+===========================
+*/
+.cp__dp__new_container .cp__dp_new_field {
+	display: inline-block;
+	vertical-align: middle;
+}
