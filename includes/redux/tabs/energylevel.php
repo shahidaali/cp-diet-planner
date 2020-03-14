@@ -1,7 +1,7 @@
 <?php
 // Include Tab General Settings
-$_tab_name = "Goal";
-$_tab_slug = 'goal';
+$_tab_name = "Energy Level";
+$_tab_slug = 'energylevel';
 include ("_general__top.php");
 
 // Tab Other Options

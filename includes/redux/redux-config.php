@@ -191,6 +191,42 @@
      * ---> END ARGUMENTS
      */
 
+
+    function cp_dp_option_fields( $_tab_slug, $limit = 3 ) {
+        $fields = [];
+        for($i  = 1; $i <= $limit; $i++) {
+            $fields[] = array(
+                'id'       => 'option_section_' . $i . '_' . $_tab_slug,
+                'type'     => 'section',
+                'title'    => __( 'Option '. $i .' Settings ', 'cp-diet-planner' ),
+                'subtitle' => '',
+                'indent'   => true,
+            );
+            $fields[] = array(
+                'id'       => 'option_icon_' . $i . '_' . $_tab_slug,
+                'type'     => 'media',
+                'title'    => __( 'Option Icon ' . $i, 'cp-diet-planner' ),
+                'desc'     => '',
+                'subtitle' => '',
+            );
+            $fields[] = array(
+                'id'       => 'option_title_' . $i . '_' . $_tab_slug,
+                'type'     => 'text',
+                'title'    => __( 'Option Title ' . $i, 'cp-diet-planner' ),
+                'desc'     => '',
+                'subtitle' => '',
+            );
+            $fields[] = array(
+                'id'       => 'option_text_' . $i . '_' . $_tab_slug,
+                'type'     => 'text',
+                'title'    => __( 'Option Text ' . $i, 'cp-diet-planner' ),
+                'desc'     => '',
+                'subtitle' => '',
+            );
+        }
+        return $fields;
+    }
+
     include ("tabs/gender.php");
     include ("tabs/goal.php");
     include ("tabs/target_weight.php");
@@ -200,3 +236,15 @@
     include ("tabs/graph.php");
     include ("tabs/stomachdiscomfort.php");
     include ("tabs/stomachheaviness.php");
+    include ("tabs/rationishealthy.php");
+    include ("tabs/sinceideal.php");
+    include ("tabs/eatinghabits.php");
+    include ("tabs/fitness.php");
+    include ("tabs/energylevel.php");
+    include ("tabs/sleep.php");
+    include ("tabs/water.php");
+    include ("tabs/cooking_time.php");
+    include ("tabs/restrictions.php");
+    include ("tabs/veggies.php");
+    include ("tabs/products.php");
+    include ("tabs/meat.php");

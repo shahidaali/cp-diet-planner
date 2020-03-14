@@ -1,7 +1,7 @@
 <?php
 // Include Tab General Settings
-$_tab_name = "Goal";
-$_tab_slug = 'goal';
+$_tab_name = "Meat";
+$_tab_slug = 'meat';
 include ("_general__top.php");
 
 // Tab Other Options
@@ -11,5 +11,5 @@ Redux::setSection( $opt_name, array(
     'subsection'       => true,
     'customizer_width' => '450px',
     'desc'             => "",
-    'fields'           => cp_dp_option_fields( $_tab_slug, 3 )
+    'fields'           => cp_dp_option_fields( $_tab_slug, 6 )
 ) );

@@ -26,20 +26,6 @@ Redux::setSection( $opt_name, array(
             'desc'     => '',
             'subtitle' => '',
         ),
-        array(
-            'id'       => 'content_before_' . $_tab_slug,
-            'type'     => 'textarea',
-            'title'    => __( 'Content Header', 'cp-diet-planner' ),
-            'subtitle' => __('Content after headings.'),
-            'desc'     => ""
-        ),
-        array(
-            'id'       => 'content_after_' . $_tab_slug,
-            'type'     => 'textarea',
-            'title'    => __( 'Content Footer', 'cp-diet-planner' ),
-            'subtitle' => __('Content at bottom of section.'),
-            'desc'     => ""
-        ),
     )
 ) );
 Redux::setSection( $opt_name, array(

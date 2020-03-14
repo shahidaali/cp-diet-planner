@@ -8,12 +8,19 @@ Redux::setSection( $opt_name, array(
 ) );
 
 Redux::setSection( $opt_name, array(
-    'title'            => __( 'Heading', 'cp-diet-planner' ),
-    'id'               => 'cp_dp_heading_' . $_tab_slug,
+    'title'            => __( 'Tab Settings', 'cp-diet-planner' ),
+    'id'               => 'cp_dp_tab_' . $_tab_slug,
     'subsection'       => true,
     'customizer_width' => '450px',
     'desc'             => "",
     'fields'           => array(
+        array(
+            'id'       => 'heading_section' . $_tab_slug,
+            'type'     => 'section',
+            'title'    => __( 'Headings', 'cp-diet-planner' ),
+            'subtitle' => '',
+            'indent'   => true,
+        ),
         array(
             'id'       => 'title_' . $_tab_slug,
             'type'     => 'text',
@@ -35,15 +42,13 @@ Redux::setSection( $opt_name, array(
             'subtitle' => "",
             'desc'     => ""
         ),
-    )
-) );
-Redux::setSection( $opt_name, array(
-    'title'            => __( 'Nav', 'cp-diet-planner' ),
-    'id'               => 'cp_dp_nav_' . $_tab_slug,
-    'subsection'       => true,
-    'customizer_width' => '450px',
-    'desc'             => "",
-    'fields'           => array(
+        array(
+            'id'       => 'nav_section' . $_tab_slug,
+            'type'     => 'section',
+            'title'    => __( 'Nav', 'cp-diet-planner' ),
+            'subtitle' => '',
+            'indent'   => true,
+        ),
         array(
             'id'       => 'nav_icon_' . $_tab_slug,
             'type'     => 'media',
@@ -57,6 +62,42 @@ Redux::setSection( $opt_name, array(
             'title'    => __( 'Nav Title', 'cp-diet-planner' ),
             'subtitle' => "",
             'desc'     => ""
+        ),
+        array(
+            'id'       => 'content_section' . $_tab_slug,
+            'type'     => 'section',
+            'title'    => __( 'Content', 'cp-diet-planner' ),
+            'subtitle' => '',
+            'indent'   => true,
+        ),
+        array(
+            'id'       => 'content_before_' . $_tab_slug,
+            'type'     => 'textarea',
+            'title'    => __( 'Content Header', 'cp-diet-planner' ),
+            'subtitle' => __('Content after headings.'),
+            'desc'     => ""
+        ),
+        array(
+            'id'       => 'content_after_' . $_tab_slug,
+            'type'     => 'textarea',
+            'title'    => __( 'Content Footer', 'cp-diet-planner' ),
+            'subtitle' => __('Content at bottom of section.'),
+            'desc'     => ""
+        ),
+        array(
+            'id'       => 'buttons_section' . $_tab_slug,
+            'type'     => 'section',
+            'title'    => __( 'Buttons', 'cp-diet-planner' ),
+            'subtitle' => '',
+            'indent'   => true,
+        ),
+        array(
+            'id'       => 'next_button_text_' . $_tab_slug,
+            'type'     => 'text',
+            'title'    => __( 'Next Button Text', 'cp-diet-planner' ),
+            'subtitle' => '',
+            'desc'     => "",
+            'default'  => 'Continue',
         ),
     )
 ) );
